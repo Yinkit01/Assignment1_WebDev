@@ -1,5 +1,41 @@
 <%- include('partials/header') %>
+<%- include ('partials/navBar.ejs') %>
 
-<!-- Your contact page content goes here -->
+<div class="contact-info">
+    <h2>Contact Information</h2>
+    <p>Name: Antonio Chung </p>
+    <p>Id: 301316341</p>
+    <p>Email: achung55@my.centennialcollege.ca</p>
+    <p>Phone: (437)599-1806</p>
+    <p>Address: 941 Progress Ave, Scarborough, ON M1G 3T8</p>
+</div>
 
+<div class="contact-form">
+    <h2>Send us a message</h2>
+    <form id="contactForm" action="index.html" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // shows that the form has been submited
+        alert("Message sent! Thank you.");
+        window.location.href = "views/index.ejs"; // Redirect to the Home Page (index.ejs)
+    });
+</script>
 <%- include('partials/footer') %>
