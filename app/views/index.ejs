@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title><%= title %></title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<img src="img/logo.png" alt="logo" style="width: 160px; height: 160px;">
+<%- include('partials/header') %>
+<%- include ('partials/navbar.ejs') %>
 <br>
 <h1>Welcome to the <%= title %>page</h1>
+    <div class="home">
+        <p class="homeText"> I am driven by a passion for technology and its potential to drive meaningful change. My mission is to harness this potential to create innovative solutions that improve people's lives. I am dedicated to continuous learning and staying at the forefront of emerging technologies, ensuring that my work not only meets the highest standards of quality and efficiency but also drives progress and fosters a better future. Through collaboration, creativity, and a commitment to excellence, I aim to contribute to the ever-evolving landscape of technology, making it accessible and beneficial for all.</p>
+    </div>
+
 </body>
 </html>
+<%- include ('partials/footer.ejs') %>

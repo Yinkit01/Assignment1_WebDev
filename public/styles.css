@@ -1,0 +1,106 @@
+header {
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: -10px; 
+   
+}
+
+header img { 
+    height: auto;
+    margin-right: 20px; 
+}
+body{
+    background-color:blanchedalmond;
+}
+h1{
+    text-align: center;
+    font-family: 'Verdana';
+}
+.home{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.left-image {
+    width: 400px;
+    height: 500px;  
+}
+.homeText{
+    margin: 1in;
+    text-align: left;
+    font-size: 20px;
+}
+#horizontal-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+#horizontal-nav .nav-item {
+    margin-left: 20px; 
+}
+
+#horizontal-nav .nav-link {
+    color: white; 
+    font-size: 20px; 
+    font-family: "verdana";
+    text-decoration: none; /* Remove underlines from links */
+}
+footer {
+    background-color: black; 
+    color: white; 
+    text-align:left; 
+    padding: 10px; 
+    margin: -10px;
+}
+.container {
+    display: flex;
+    align-items: center; 
+    margin: 3ch;
+}
+.about{
+    margin-top: 1ch;
+    margin-bottom: 1ch;
+}
+
+.profile {
+ 
+    margin-right: 10px; 
+}
+
+.profile img {
+    max-width: 100%; 
+    border-radius: 4px;
+}
+
+.bio {
+    flex: 1;
+    font-family: "verdana";
+    margin: 2ch;
+    background-color: burlywood;
+    border-radius: 4px;
+    padding: 20px; /* Adjust padding to extend background and border */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #060606;
+    color: white; 
+    text-decoration: none; /* Remove underlines from the link */
+    border-radius: 4px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    text-align: center; /* Center-align text */
+    margin: 0 auto; 
+    display: block; 
+    width: fit-content; 
+}
+
+.download-button:hover {
+    background-color: #35373a; /* Darker background color on hover */
+}
