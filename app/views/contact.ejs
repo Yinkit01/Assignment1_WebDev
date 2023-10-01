@@ -12,7 +12,7 @@
 
 <div class="contact-form">
     <h2>Send us a message</h2>
-    <form id="contactForm" action="index.html" method="post">
+    <form id="contactForm" action="/" method="post">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
 
@@ -32,10 +32,10 @@
     </form>
 </div>
 <script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // shows that the form has been submited
-        alert("Message sent! Thank you.");
-        window.location.href = "views/index.ejs"; // Redirect to the Home Page (index.ejs)
-    });
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    alert("Message sent! Thank you.");
+    window.location.href = "/";
+});
 </script>
 <%- include('partials/footer') %>

@@ -32,18 +32,6 @@ module.exports = function () {
   app.set('view engine', 'ejs');
 app.use('/', require('../app/routes/index.server.routes.js'));
 
-//app.use('/', 'routes');
-
-//require('../app/routes/index.server.routes.js')(app);
-
-  // Example route for demonstration
-  //app.get('/', (req, res) => {
-    //res.render('index'); // Replace 'index' with the name of your template
-    //});
-    
-    //require('../app/routes/index.server.routes.js')(app);
-
-  // Serve static files from the 'public' directory
   app.use(express.static('./public'));
 
   return app;
